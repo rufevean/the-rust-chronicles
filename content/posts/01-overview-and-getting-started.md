@@ -1,10 +1,10 @@
 ---
-title: "01 Overview and Getting Started"
+title: "01-Overview and Getting Started"
 date: 2023-06-26T22:28:52+05:30
-draft: true
+draft: false
 ---
 
-# why rust
+## why rust?
 
 You might be asking yourself , why should i learn rust ? 
 
