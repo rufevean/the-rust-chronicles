@@ -4,25 +4,23 @@ date: 2023-06-26T22:28:52+05:30
 draft: false
 ---
 
-## why rust?
+## Why Rust?
 
-You might be asking yourself , why should i learn rust ? 
+You might be asking yourself, "Why should I learn Rust?"
 
-Now lets take two approaches on this question ,
+Now let's take two approaches to this question.
 
- if you are new to programming or someone who is eager to learn something new and exicting. Learning anything is only going to benefit you, whether is javascript,python, c or  **Rust** .Lets focus on **How**  more than **Why** because if you are stuck on *why should i* , you are never going to go forward . Programming is a vast field and am confident that you will enjoy it . **Welcome !**
+If you are new to programming or someone who is eager to learn something new and exciting, learning anything will benefit you, whether it's JavaScript, Python, C, or **Rust**. Let's focus on **how** more than **why**, because if you are stuck on "why should I," you will never move forward. Programming is a vast field, and I am confident that you will enjoy it. **Welcome!**
 
- Now lets take a technical approach on why we should learn rust , Lets take about its uses,its advantages and disadvanatages
-  
-- According to [rust-lang.org](https://www.rust-lang.org/), Rust is *A language empowering everyone
-to build reliable and efficient software.* To understand this well, lets talk about memory.Just like everything you are doing in your computer needs memory to work, Programming langauges also need memory to run. We will learn about various ways you can store data later through Data structures and Data types.Programming languages like c, c++ which are called low level languages use memory allocation functions like *malloc()* , *realloc()* and to free that memory, they use *free()*. High level programming languages like python, Java and Go uses **Garbage collector** where memory is managed by the programming laanguage itself.
+Now let's take a technical approach to why we should learn Rust. Let's talk about its uses, advantages, and disadvantages.
 
-- Why do we need to manage memory? Performance and security are the main reasons. Higher level languages are slower compared to low level languages becuase the garbage collector uses multiple algorithms to check if the memory is completely freed or not. In low level algorithms, we do it ourselves as i stated above using memory allocation functions , But this causes a problem called **Memory leak** 
+According to [rust-lang.org](https://www.rust-lang.org/), Rust is "A language empowering everyone to build reliable and efficient software." To understand this well, let's talk about memory. Just like everything you do on your computer requires memory to work, programming languages also need memory to run. We will learn about various ways you can store data later through data structures and data types. Programming languages like C and C++, which are called low-level languages, use memory allocation functions like *malloc()*, *realloc()*, and *free()* to manage memory. High-level programming languages like Python, Java, and Go use **garbage collectors** where memory is managed by the programming language itself.
 
-- Hackers love Memory leaks, its a good vulnerability to access the website's data and its a huge problem because humans make mistakes and sometime we forget to free the memory just like we forget to turn off the light before getting on bed.**Rust** kind of solves this issue by using the concept of Ownership ( more detailed on this later ). Because of Ownership principle,there is a good amount of performance gain because there is no garbage collector which slows it down and unlike 'c++' where you have might have forget it ,Rust free's the memeory itself once its out of scope.
+Why do we need to manage memory? Performance and security are the main reasons. Higher-level languages are slower compared to low-level languages because the garbage collector uses multiple algorithms to check if the memory is completely freed or not. In low-level languages, we handle it ourselves as I stated above using memory allocation functions. However, this causes a problem called **memory leak**.
 
+Hackers love memory leaks as they provide a vulnerability to access a website's data. It's a significant problem because humans make mistakes, and sometimes we forget to free memory, just like we forget to turn off the light before going to bed. **Rust** solves this issue by using the concept of Ownership (more detailed on this later). Because of the ownership principle, there is a significant performance gain because there is no garbage collector to slow it down. Unlike C++, where you might forget to free memory, Rust automatically frees the memory itself once it's out of scope.
 
+> Fun fact: Rust isn't a mainstream language yet like Python, C, or Java. So, if you find anyone learning or using Rust, appreciate them because they are doing it out of passion and love for Rust.
 
-> fun fact : rust isnt a main stream language yet like python, c or java . so if you find anyone learning or using rust , appreciate them because there are doing it for there passion and love for rust 
+> Fun fact No. 2: Rust has been elected as the most loved programming language for eight years straight as of 2023.
 
-> fun fact No.2 : rust is elected as the most loved programming for 8 year straight as of 2023 
