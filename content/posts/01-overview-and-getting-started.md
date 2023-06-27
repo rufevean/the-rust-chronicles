@@ -20,9 +20,9 @@ Why do we need to manage memory? Performance and security are the main reasons. 
 
 Hackers love memory leaks as they provide a vulnerability to access a website's data. It's a significant problem because humans make mistakes, and sometimes we forget to free memory, just like we forget to turn off the light before going to bed. **Rust** solves this issue by using the concept of Ownership (more detailed on this later). Because of the ownership principle, there is a significant performance gain because there is no garbage collector to slow it down. Unlike C++, where you might forget to free memory, Rust automatically frees the memory itself once it's out of scope.
 
-> Fun fact: Rust isn't a mainstream language yet like Python, C, or Java. So, if you find anyone learning or using Rust, appreciate them because they are doing it out of passion and love for Rust.
+> Rust isn't a mainstream language yet like Python, C, or Java. So, if you find anyone learning or using Rust, appreciate them because they are doing it out of passion and love for Rust.
 
-> Fun fact No. 2: Rust has been elected as the most loved programming language for eight years straight as of 2023.
+> Rust has been elected as the most loved programming language for eight years straight as of 2023.
 
 
 
@@ -52,7 +52,7 @@ Moving forward, there are two types of brackets in this function: `( )` and `{ }
 
 > "{}" and "()" are also used for other purposes, here is an good article to explore them [doc.rust-lang]("https://doc.rust-lang.org/book/appendix-02-operators.html")
 
-> fun fact : every function can take arguments in () except the `main` function
+>every function can take arguments in () except the `main` function
 
 ```rust
 println!("Hello, World!");
