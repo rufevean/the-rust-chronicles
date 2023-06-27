@@ -70,7 +70,8 @@ Now that you have an idea of how to write a **Hello, World!** program in Rust, l
 
 Every programming language has a file extension for its source code (`.rs` for Rust, just like `.exe` for an application). When you use the Rust compiler ([rustc](https://www.rust-lang.org/tools/install)), it takes the source code and generates an executable binary file. It then links it with all the dependencies (required software to execute the program without errors) and system libraries.
 
-> The executable can have different extensions depending on the operating system: `.exe` for Windows, `.app` for macOS, and no extension by default for Linux 
+> The executable can have different extensions depending on the operating system: `.exe` for Windows, `.app` for macOS, and no extension by default for Linux
+
 > Thought: Everything you see on a computer is just transmitters turning on and off with binary signals. Isn't it amazing that there's a whole universe just using 0s and 1s?
 
 ### Execution
