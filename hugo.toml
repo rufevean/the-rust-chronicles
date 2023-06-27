@@ -2,3 +2,20 @@ baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'The Rust Chronicles'
 theme = 'PaperMod'
+
+[params]
+ShowShareButtons = true
+ShowReadingTime = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons= true
+author = ["rufevean"]
+comments = true
+Sharebuttons=['linkedin','twitter','reddit','whatsapp']
+
+
+
+[[menu.main]]
+identifier = "github"
+name = "github"
+url = "https://github.com/rufevean/the-rust-chronicles"
+weight = 30
