@@ -50,6 +50,10 @@ In Rust, `fn` denotes a **function**. We can think of functions like formulas in
 
 Moving forward, there are two types of brackets in this function: `( )` and `{ }`. The first one `( )` is for taking inputs, which we call arguments, and the latter `{ }` are block delimiters that specify the block of code for this function.
 
+> "{}" and "()" are also used for other purposes, here is an good article to explore them [doc.rust-lang]("https://doc.rust-lang.org/book/appendix-02-operators.html")
+
+> fun fact : every function can take arguments in () except the `main` function
+
 ```rust
 println!("Hello, World!");
 ```
