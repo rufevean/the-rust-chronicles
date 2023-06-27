@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>The Rust Chronicles</title>
@@ -6,17 +6,26 @@
     <description>Recent content on The Rust Chronicles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Jun 2023 22:28:52 +0530</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Jun 2023 22:28:52 +0530</lastBuildDate>
+    <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    <image>
+      <url>https://i.ibb.co/zxLygpR/icon.png</url>
+      <title>The Rust Chronicles Icon</title>
+      <link>http://example.org/</link>
+    </image>
+    
     <item>
       <title>01 Overview and Getting Started</title>
       <link>http://example.org/posts/01-overview-and-getting-started/</link>
       <pubDate>Mon, 26 Jun 2023 22:28:52 +0530</pubDate>
-      
       <guid>http://example.org/posts/01-overview-and-getting-started/</guid>
-      <description>why rust You might be asking yourself , why should i learn rust ?
-Now lets take two approaches on this question ,
-if you are new to programming or someone who is eager to learn something new and exicting. Learning anything is only going to benefit you, whether is javascript,python, c or Rust .Lets focus on How more than Why because if you are stuck on why should i , you are never going to go forward .</description>
+      <description>why rust You might be asking yourself, why should I learn Rust?
+      Now let's take two approaches to this question.
+      If you are new to programming or someone who is eager to learn something new and exciting, learning anything is only going to benefit you, whether it's JavaScript, Python, C, or Rust.
+      Let's focus on "How" more than "Why" because if you are stuck on "Why should I," you will never move forward.</description>
     </item>
     
   </channel>
 </rss>
+

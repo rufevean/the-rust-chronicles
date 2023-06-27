@@ -1,5 +1,5 @@
 ---
-title: "01-Overview and Getting Started"
+title: "01-Getting started with Rust"
 date: 2023-06-26T22:28:52+05:30
 draft: false
 ---
@@ -25,85 +25,56 @@ Hackers love memory leaks as they provide a vulnerability to access a website's 
 > Fun fact No. 2: Rust has been elected as the most loved programming language for eight years straight as of 2023.
 
 
-## Hello,world!
 
-For any programming language, its a good start by coding a **Hello,world!**  program, Lets take it a bit furthur here, rather than just coding it , lets try to learn why is it coded that way
+## Hello, World!
 
+For any programming language, it's a good start to code a **Hello, World!** program. Let's take it a bit further here and try to understand why it is coded that way.
 
-```
-fn main(){
-    println!("Hello,World!");
-}
-
-```
-lets understand it by first seperating the items in this codeblock into two parts
-
-```
-fn main(){
-
+```rust
+fn main() {
+    println!("Hello, World!");
 }
 ```
 
-**fn** denotes **Function**.We can think of functions like a formula in maths, you give some inputs, you get some outputs.
+Let's break down the code into two parts:
 
-**main** here is the name of the function and also In Rust , just like in many programming languages , **main** function is the entry point , this is where the compiler(more on this later) checks first.
+```rust
+fn main() {
 
-moving forward there are two types of brackets in this function, '( )' and '{ }', The first one '( )' is for taking inputs which we call arguements and the latter '{ }' are block delimiters, its specifies the block of code of this function
-
-> note : '()' and '{}' are also used for other purposes, Here is a good reference of them [doc.rust-lang]("https://doc.rust-lang.org/book/appendix-02-operators.html")
-
-
-```
-println!("Hello,World!");
-
+}
 ```
 
-Deconstructing this line gives us three parts 
+In Rust, `fn` denotes a **function**. We can think of functions like formulas in math, where you give some inputs and get some outputs.
 
-**println!()** which is a **macro** is used to print something into the console.we can also using **println** without the **!** to print something but here it cause an formatting error
+`main` is the name of the function and, in Rust (as in many programming languages), the `main` function is the entry point. This is where the compiler (more on this later) checks first.
 
-```
-error[E0423]: expected function, found macro `println`                                                  
- --> test1.rs:2:5                                                                                       
-  |                                                                                                     
-2 |     println("hello");                                                                               
-  |     ^^^^^^^ not a function                                                                          
-  |                                                                                                     
-help: use `!` to invoke the macro                                                                       
-  |                                                                                                     
-2 |     println!("hello");                                                                              
-  |            +                                                                                        
-                                                                                                        
-error: aborting due to previous error                                                                   
-                                                                                                        
-For more information about this error, try `rustc --explain E0423`.
+Moving forward, there are two types of brackets in this function: `( )` and `{ }`. The first one `( )` is for taking inputs, which we call arguments, and the latter `{ }` are block delimiters that specify the block of code for this function.
 
+```rust
+println!("Hello, World!");
 ```
 
+Deconstructing this line gives us three parts:
 
- "Hello,world!" is a &str which is a String slice which is a part of a String, not a String but a part of it. Dont be confused , you will understand how Strings work in rust as you progress forward.
+- `println!()` is a **macro** used to print something to the console. We can also use `println` without the `!`, but it would cause a formatting error.
+- "Hello, World!" is a `&str`, which is a string slice, a part of a string but not the whole string. Don't be confused; you will understand how strings work in Rust as you progress.
+- To finish off, we have `;` (semicolon), which is used in many languages to separate statements and terminate code blocks. We can think of it like `,` (comma) in an English sentence.
 
-To finish of the things we have ";"(semi-colon),which is used in many languages to seperate statements and terminate code blocks, we can think of it like ','(comma) in english sentence .
+> Tip: Rust has a great compiler. It is strict, but that's how good programs are made. So, if you find yourself facing a pile of errors, just know that it only wants you to be better and write good code.
 
-> tip : Rust has a great compiler,It is strict but thats how good programs are made. So if you found yourself in a pile of errors, just know that it only wants you to be better and write good code
+## Under the Hood
 
-
-
-## Under the hood
-
-
-Now that you have an idea how we can write an **Hello,World!** program in rust, lets dig down on what happens once we compile and run it
+Now that you have an idea of how to write a **Hello, World!** program in Rust, let's dig down into what happens once we compile and run it.
 
 ### Compilation
 
-Every Programming languages has an extension to its file name (.rs for rust just like a .exe for an application).Once you use the Rust compiler ([rustc]("https://www.rust-lang.org/tools/install")), The compiler takes the source code and generates an executable binary file and Links it with all the dependencies ( required software to execute the program without any errors) and system libraries.
+Every programming language has a file extension for its source code (`.rs` for Rust, just like `.exe` for an application). When you use the Rust compiler ([rustc](https://www.rust-lang.org/tools/install)), it takes the source code and generates an executable binary file. It then links it with all the dependencies (required software to execute the program without errors) and system libraries.
 
-> The executable can be in the form .exe for Windows , .app for macOS and for linux, it can be given any extension but by default it doesnt have one (i use arch btw)
+> The executable can have different extensions depending on the operating system: `.exe` for Windows, `.app` for macOS, and no extension by default for Linux 
+> Thought: Everything you see on a computer is just transmitters turning on and off with binary signals. Isn't it amazing that there's a whole universe just using 0s and 1s?
 
-> Think :  everyone thing you see on a computer, is just transmitters just getting on and off with binary signals, isnt it so amazing that there a whole universe just using 0s and 1s?
+### Execution
 
-### Execution 
+Once the compilation and linking processes are completed, and you execute the program, the operating system loads it into memory and starts executing it. As we discussed, the `main` function is used as the entry point, so the operating system detects the `main` function and begins executing the code inside it.
 
-Once the compilation and linking processes are completed and you execute the program , the os loads it int memory and start executing it. As we discussed about the **main** function is used as the entry point , so the os detects the main function and begins executing code inside it .
-
-After the function is executed , the program terminates and the control is returned to the operating system, it reclaims  the resources that were allocated to that program.
+After the function is executed, the program terminates, and control is returned to the operating system, which reclaims the resources that were allocated to that program.
