@@ -12,7 +12,11 @@ author = ["rufevean"]
 comments = true
 Sharebuttons=['linkedin','twitter','reddit','whatsapp']
 
-
+[[menu.main]]
+identifier = "github"
+name = "sponser"
+url = "https://github.com/rufevean"
+weight = 30
 
 [[menu.main]]
 identifier = "github"
