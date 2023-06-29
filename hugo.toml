@@ -18,4 +18,9 @@ name = "sponser"
 url = "https://github.com/rufevean"
 weight = 30
 
+identifier = "github"
+name = "give me a star"
+url = "https://github.com/rufevean/the-rust-chronicles"
+weight = 30
+
 
