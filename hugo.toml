@@ -7,20 +7,19 @@ theme = 'PaperMod'
 ShowShareButtons = true
 ShowReadingTime = true
 ShowBreadCrumbs = true
-ShowCodeCopyButtons= true
+ShowCodeCopyButtons = true
 author = ["rufevean"]
 comments = true
-Sharebuttons=['linkedin','twitter','reddit','whatsapp']
+Sharebuttons = ['linkedin', 'twitter', 'reddit', 'whatsapp']
 
 [[menu.main]]
 identifier = "github"
-name = "sponser"
+name = "sponsor"
 url = "https://github.com/rufevean"
 weight = 30
 
-identifier = "github"
-name = "give me a star"
+[[menu.main]]
+identifier = "github-star"
+name = "give me a star \U0001F31F"
 url = "https://github.com/rufevean/the-rust-chronicles"
 weight = 30
-
-
