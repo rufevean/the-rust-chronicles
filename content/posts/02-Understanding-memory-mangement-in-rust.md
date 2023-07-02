@@ -1,7 +1,7 @@
 ---
 title: "02-Understanding Memory Mangement in Rust"
 date: 2023-07-01T11:36:22+05:30
-draft: false
+draft: true
 ---
 
 Today, We are going to discuss about how rust manages its memory and why rust is unique from other programming languages in managing memory.Before going into deep , lets know how data is managed in rust.
